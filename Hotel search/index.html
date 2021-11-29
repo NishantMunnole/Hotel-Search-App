@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Heading of the Page -->
+        <div class="row my-2">
+            <div class="col-12">
+                <h1 class="display-3 text-center">Search Hotels to Stay</h1>
+            </div>
+        </div>
+        <!-- Form Start -->
+        <div class="row">
+            <div class="col-12">
+                <form id="bookFrom">
+                    <div class="form-group">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Choose Your Location">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="date" id="check-in" class="form-control" placeholder="Choose Check-in-Date">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="date" id="check-out" class="form-control" placeholder="Choose Check-in-Date">
+                        </div>
+                    </div>
+                    <button type="submit" class="form-control btn btn-outline-info">Search</button>
+                </form>
+            </div>
+        </div>
+        <!-- form end -->
+        <!-- cards start -->
+        <div class="my-5" id="card-deck">
+            <div class="card px-2 py-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <button class="btn btn-outline-primary">Know More</button>
+            </div>
+            <div class="card px-2 py-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <button class="btn btn-outline-primary">Know More</button>
+            </div>
+            <div class="card px-2 py-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <button class="btn btn-outline-primary">Know More</button>
+            </div>
+            <div class="card px-2 py-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <button class="btn btn-outline-primary">Know More</button>
+            </div>
+            <div class="card px-2 py-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <button class="btn btn-outline-primary">Know More</button>
+            </div>
+        </div>
+        <!-- Cards end -->
+        <!-- Pagination start -->
+        <div class="my-2" id="pagination-div">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item" value="0">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item" value="1"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item" value="2"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item" value="3"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item" value="4">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Pagination end -->
+
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

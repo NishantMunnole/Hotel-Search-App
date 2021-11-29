@@ -1,0 +1,14 @@
+#card-deck{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+body{
+    max-height: auto;
+}
